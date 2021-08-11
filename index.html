@@ -1,10 +1,77 @@
----
-title: Boostrap Index
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Boostrap Index</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
 
+  <body>
+    <div class="d-flex justify-content-between">
+      <div class="d-flex w-25 flex-column bg-light justify-content-between">
+
+        <ul class="list-unstyled fs-6 fw-bold ps-5  mb-0">
+          <li class="my-5 navbar-brand">
+            <img
+              src="https://hexschool.github.io/webLayoutTraining1st/week5/logo-ANSWER.svg"
+              alt="logo"
+            />
+          </li>
+          <li class="mb-4 d-flex align-items-center cursor-pointer">
+            <span class="material-icons md-24 me-3">bar_chart</span>Dashboard
+          </li>
+          <li class="mb-4 d-flex align-items-center cursor-pointer">
+            <span class="material-icons md-24 me-3">message</span>Question
+          </li>
+          <li class="mb-4 d-flex align-items-center cursor-pointer">
+            <span class="material-icons md-24 me-3">assignment</span>Assignment
+          </li>
+          <li class="mb-4 d-flex align-items-center cursor-pointer">
+            <span class="material-icons md-24 me-3">pets</span>Course
+          </li>
+          <li class="mb-4 d-flex align-items-center cursor-pointer text-success">
+            <span class="material-icons md-24 me-3">account_box</span>Admin
+          </li>
+          <li class="mb-4 d-flex align-items-center cursor-pointer">
+            <span class="material-icons md-24 me-3">settings</span>Settings
+          </li>
+  
+          
+        </ul>
+        <li class="d-flex p-4">
+          <div class="picture overflow-hidden rounded-circle">
+            <img
+              class="img-fluid d-block"
+              src="assets/images/andychen.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="ps-4 border-bottom-1">
+            <div class="d-flex justify-content-between">
+              <div>
+                <h5 class="mb-0">Andy Chen (You)</h5>
+                <small class="text-dark mb-0">13:24 AM (1 hours ago)</small>
+              </div>
+
+            </div>
+
+          </div>
+        </li>
+
+
+      </div>
+
+      
 <div class="container m-5">
   <nav class="w-100 d-flex flex-row justify-content-between mb-5">
     <div class="d-flex flex-row align-items-center">
@@ -225,3 +292,12 @@ current: index
     </div>
   </div>
 </div>
+
+    </div>
+
+    <!-- <footer class="footer">footer</footer> -->
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>
