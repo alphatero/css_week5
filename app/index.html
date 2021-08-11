@@ -1,0 +1,227 @@
+---
+title: Boostrap Index
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="container m-5">
+  <nav class="w-100 d-flex flex-row justify-content-between mb-5">
+    <div class="d-flex flex-row align-items-center">
+      <h2>Assignment</h2>
+      <div class="dropdown ms-4">
+        <button
+          class="btn dropdown-toggle d-flex"
+          type="button"
+          id="dropdownMenuButton2"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          All Courses<span class="material-icons-outlined"> expand_more </span>
+        </button>
+      </div>
+    </div>
+    <div class="d-flex">
+      <p><span class="material-icons-outlined"> search </span></p>
+      <p><span class="material-icons ms-3"> notifications_active </span></p>
+    </div>
+  </nav>
+  <main class="grid row">
+    <div class="col-4">
+      <div class="dropdown">
+        <button
+          class="btn dropdown-toggle d-flex ps-0"
+          type="button"
+          id="dropdownMenuButton2"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          All(4)<span class="material-icons-outlined"> expand_more </span>
+        </button>
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item d-flex flex-column py-3">
+          <div class="d-flex justify-content-between">
+            <small>Chapter Assignment 2</small>
+            <small>4 hrs ago</small>
+          </div>
+          <div class="d-flex justify-content-between">
+            <strong>Please check this file…</strong>
+            <small class="text-secondary">Emily Wang</small>
+          </div>
+        </li>
+        <li class="list-group-item d-flex flex-column py-3">
+          <div class="d-flex justify-content-between">
+            <small>Chapter Assignment 1</small>
+            <small>12 hrs ago</small>
+          </div>
+          <div class="d-flex justify-content-between">
+            <strong>My Homework</strong>
+            <small class="text-secondary">David Xu</small>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-8">
+      <p><small class="mt-2">2 comments</small></p>
+      <ul class="list-group mt-2">
+        <li
+          class="
+            list-group-item
+            d-flex
+            justify-content-between
+            align-items-center
+            list-group-item-secondary
+          "
+        >
+          <div>
+            <small>Chapter Assignment 2 / HTML&CSS</small>
+            <h5 class="pt-1">Please check this file for me, thanks!</h5>
+          </div>
+          <span class="material-icons"> more_vert </span>
+        </li>
+        <li
+          class="
+            list-group-item
+            d-flex
+            justify-content-between
+            align-items-center
+            list-group-item-secondary
+          "
+        >
+          <ul class="ps-0 py-4">
+            <li class="d-flex">
+              <div class="picture overflow-hidden rounded-circle">
+                <img
+                  class="img-fluid d-block"
+                  src="assets/images/emilywang.jpeg"
+                  alt=""
+                />
+              </div>
+              <div class="ps-2 border-bottom pb-4">
+                <h5 class="mb-0">Emily Wang</h5>
+                <small class="text-dark mb-0">10:38 AM (4 hours ago)</small>
+                <p class="content mt-4">
+                  Hi Teacher, the attached file is my homework of chapter 2. And
+                  here comes a question: Why in the following code the height of
+                  the div is bigger than the height of the img ? There is a gap
+                  below the image, but it doesn’t seems to be a padding/margin.
+                  What is the gap or extra space below image?
+                </p>
+                <button
+                  class="
+                    btn btn-secondary
+                    border
+                    d-flex
+                    align-items-center
+                    py-2
+                  "
+                >
+                  <span class="material-icons"> attach_file </span>
+                  <p class="my-auto">HW-2-David.zip</p>
+                </button>
+              </div>
+            </li>
+            <li class="d-flex py-4">
+              <div class="picture overflow-hidden rounded-circle">
+                <img
+                  class="img-fluid d-block"
+                  src="assets/images/andychen.jpeg"
+                  alt=""
+                />
+              </div>
+              <div class="ps-2 border-bottom-1">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h5 class="mb-0">Andy Chen (You)</h5>
+                    <small class="text-dark mb-0">13:24 AM (1 hours ago)</small>
+                  </div>
+                  <div>
+                    <span class="material-icons"> star_border </span>
+                    <span class="material-icons ps-4"> edit </span>
+                  </div>
+                </div>
+                <p class="content mt-4">
+                  Hi David, by default, an image is rendered inline, like a
+                  letter so it sits on the same line that a, b, c and d sit on.
+                  There is space below that line for the descenders you find on
+                  letters like g, j, p and q.
+                </p>
+                <p>You can:</p>
+                <ul>
+                  <li>
+                    adjust the vertical-align of the image to position it
+                    elsewhere (e.g. the middle ) or
+                  </li>
+                  <li>
+                    change the display so it isn’t inline.
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <footer class="grid row justify-content-between">
+    <div class="col-8 offset-4 justify-content-between d-flex mt-4">
+
+<div>
+
+  <button type="button" class="btn px-0"><span class="material-icons">
+    chevron_left
+    </span></button>
+  <button type="button" class="btn "><span class="material-icons">
+    chevron_right
+    </span></button>
+</div>
+<div>
+
+  <button class="btn btn-outline-success">Mark as read</button>
+  <button class="btn btn-success ms-2">Reply</button>
+</div>
+
+    </div>
+  </footer>
+</div>
+
+<!-- Button trigger modal -->
+<!-- <button
+  type="button"
+  class="btn btn-primary"
+  data-bs-toggle="modal"
+  data-bs-target="#exampleModal"
+>
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">...</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
